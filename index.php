@@ -35,7 +35,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['role'])) {
     // 4. Jika BELUM login
     // Lempar ke halaman Login
 //    header("Location: auth/login-v2.php");
-    header("Location: petugas/index.php");
+    header("Location: auth/login-v2.php");
     exit;
 }
 ?>
