@@ -107,7 +107,7 @@ try {
     // --- PROSES MASUK ---
     if ($tipe === 'masuk') {
         if ($existing) jsonResponse(false, 'Sudah absen masuk.', [], 400);
-        
+//lio-ubah ini untuk konversi data foto dari base64 ke file gambar di server lokal        
         $namaFile = saveBase64ToImage($input['foto'] ?? '', $petugasId, 'MASUK');
         if (!$namaFile) jsonResponse(false, 'Gagal menyimpan foto masuk.', [], 400);
 
