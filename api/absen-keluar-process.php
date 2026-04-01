@@ -5,51 +5,49 @@ require_once '../includes/functions.php';
 
 date_default_timezone_set('Asia/Jakarta');
 
+/**
+ * Cek apakah request mengharapkan JSON
+ */
 function isJsonRequest(): bool {
     $accept = $_SERVER['HTTP_ACCEPT'] ?? '';
     $xrw = $_SERVER['HTTP_X_REQUESTED_WITH'] ?? '';
     return (stripos($accept, 'application/json') !== false) || (strtolower($xrw) === 'xmlhttprequest');
 }
 
+/**
+ * Helper untuk response error (Alert/JSON)
+ */
 function respondError($message, $redirect = null, $httpCode = 400) {
     if (isJsonRequest()) {
-        jsonResponse(false, $message, [], $httpCode);
+        if (function_exists('jsonResponse')) {
+            jsonResponse(false, $message, [], $httpCode);
+        } else {
+            http_response_code($httpCode);
+            echo json_encode(['success' => false, 'message' => $message]);
+            exit;
+        }
     }
-
     $redir = $redirect ?: '../petugas/dashboard-v2.php';
     echo "<script>alert(" . json_encode($message) . "); window.location.href=" . json_encode($redir) . ";</script>";
     exit;
 }
 
-function hasColumn($conn, $table, $column): bool {
-    $stmt = $conn->prepare(
-        "SELECT 1
-         FROM information_schema.COLUMNS
-         WHERE TABLE_SCHEMA = DATABASE()
-           AND TABLE_NAME = ?
-           AND COLUMN_NAME = ?
-         LIMIT 1"
-    );
-    if (!$stmt) {
-        return false;
-    }
-    $stmt->bind_param('ss', $table, $column);
-    $stmt->execute();
-    $stmt->store_result();
-    $ok = $stmt->num_rows > 0;
-    $stmt->close();
-    return $ok;
-}
-
+/**
+ * Mencari kolom yang tersedia di tabel (untuk fleksibilitas struktur DB)
+ */
 function pickFirstExistingColumn($conn, $table, $candidates) {
     foreach ($candidates as $col) {
-        if (hasColumn($conn, $table, $col)) {
-            return $col;
-        }
+        $stmt = $conn->prepare("SELECT 1 FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = ? AND COLUMN_NAME = ? LIMIT 1");
+        $stmt->bind_param('ss', $table, $col);
+        $stmt->execute();
+        $exists = $stmt->get_result()->num_rows > 0;
+        $stmt->close();
+        if ($exists) return $col;
     }
     return null;
 }
 
+// 1. Keamanan Dasar
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     respondError('Method not allowed', '../petugas/dashboard-v2.php', 405);
 }
@@ -60,172 +58,134 @@ if (!isset($_SESSION['role']) || !in_array($_SESSION['role'], ['petugas', 'admin
 
 $petugasId = isset($_SESSION['petugas_id']) ? (int)$_SESSION['petugas_id'] : (int)($_SESSION['user_id'] ?? 0);
 
+// 2. Ambil & Validasi Input
 $input = [];
 $contentType = $_SERVER['CONTENT_TYPE'] ?? '';
 if (stripos($contentType, 'application/json') !== false) {
-    $rawInput = file_get_contents('php://input');
-    $input = json_decode($rawInput, true) ?? [];
+    $input = json_decode(file_get_contents('php://input'), true) ?? [];
 } else {
     $input = $_POST;
 }
 
-$latitude = isset($input['latitude']) ? (float)$input['latitude'] : 0;
+$latitude  = isset($input['latitude']) ? (float)$input['latitude'] : 0;
 $longitude = isset($input['longitude']) ? (float)$input['longitude'] : 0;
-$foto = isset($input['foto']) ? trim($input['foto']) : '';
+$fotoRaw   = isset($input['foto']) ? trim($input['foto']) : '';
 
-if ($latitude == 0 || $longitude == 0) {
-    respondError('Koordinat lokasi tidak valid. Aktifkan GPS.');
+if ($latitude == 0 || $longitude == 0) respondError('Koordinat tidak valid. Pastikan GPS aktif.');
+if (empty($fotoRaw)) respondError('Foto absen keluar wajib diambil.');
+
+// 3. Proses Foto (Base64 to File)
+$namaFileKeluar = "";
+if (preg_match('/^data:image\/(\w+);base64,/', $fotoRaw, $type)) {
+    $dataFoto = base64_decode(substr($fotoRaw, strpos($fotoRaw, ',') + 1));
+    if ($dataFoto === false) respondError("Format foto rusak.");
+
+    $uploadDir = '../uploads/absensi/';
+    if (!file_exists($uploadDir)) mkdir($uploadDir, 0777, true);
+
+    $namaFileKeluar = 'keluar_' . $petugasId . '_' . time() . '.jpg';
+    if (!file_put_contents($uploadDir . $namaFileKeluar, $dataFoto)) {
+        respondError("Gagal menyimpan foto ke server.");
+    }
+} else {
+    $namaFileKeluar = $fotoRaw; 
 }
 
-if ($foto === '') {
-    respondError('Foto absen keluar wajib diambil.');
-}
-
-$bagianId = isset($_SESSION['bagian_id']) ? (int)$_SESSION['bagian_id'] : 0;
-if ($bagianId <= 0) {
-    $stmt = $conn->prepare('SELECT bagian_id FROM petugas WHERE id = ?');
-    $stmt->bind_param('i', $petugasId);
-    $stmt->execute();
-    $row = stmtFetchAssoc($stmt);
-    $stmt->close();
-    $bagianId = isset($row['bagian_id']) ? (int)$row['bagian_id'] : 0;
-}
-
-if ($bagianId <= 0) {
-    respondError('Bagian petugas tidak ditemukan.');
-}
-
+// 4. Cek Jadwal Hari Ini
 $today = date('Y-m-d');
-
-// Cek jadwal petugas hari ini
-$stmtJadwal = $conn->prepare("SELECT jp.id, jp.shift_id, s.nama_shift, s.mulai_keluar, s.akhir_keluar 
-                               FROM jadwal_petugas jp 
-                               LEFT JOIN shift s ON jp.shift_id = s.id 
-                               WHERE jp.petugas_id = ? AND jp.tanggal = ? LIMIT 1");
+$stmtJadwal = $conn->prepare("
+    SELECT jp.id as jadwal_id, s.mulai_keluar, s.akhir_keluar 
+    FROM jadwal_petugas jp 
+    JOIN shift s ON jp.shift_id = s.id 
+    WHERE jp.petugas_id = ? AND jp.tanggal = ? LIMIT 1
+");
 $stmtJadwal->bind_param('is', $petugasId, $today);
 $stmtJadwal->execute();
-$jadwal = stmtFetchAssoc($stmtJadwal);
+$jadwal = $stmtJadwal->get_result()->fetch_assoc();
 $stmtJadwal->close();
 
-if (!$jadwal) {
-    respondError('Anda tidak memiliki jadwal untuk hari ini. Hubungi admin.');
-}
+if (!$jadwal) respondError('Anda tidak memiliki jadwal tugas untuk hari ini.');
 
-$jadwalId = (int)$jadwal['id'];
-$shiftId = (int)$jadwal['shift_id'];
-
-if ($shiftId <= 0) {
-    respondError('Jadwal Anda belum memiliki shift. Hubungi admin.');
-}
-
-// Validasi jam absen keluar sesuai shift
+// 5. Validasi Jam Keluar (Window Time)
 $currentTime = date('H:i:s');
 $mulai = $jadwal['mulai_keluar'];
 $akhir = $jadwal['akhir_keluar'];
-
 if ($mulai && $akhir) {
-    $canKeluar = false;
-    if ($akhir >= $mulai) {
-        $canKeluar = ($currentTime >= $mulai && $currentTime <= $akhir);
-    } else {
-        $canKeluar = ($currentTime >= $mulai || $currentTime <= $akhir);
-    }
-    
-    if (!$canKeluar) {
-        respondError("Absen keluar hanya bisa dilakukan antara jam {$mulai} - {$akhir}.");
-    }
+    $isInside = ($akhir >= $mulai) 
+                ? ($currentTime >= $mulai && $currentTime <= $akhir)
+                : ($currentTime >= $mulai || $currentTime <= $akhir); // Handle shift lewat tengah malam
+    if (!$isInside) respondError("Absen keluar hanya diizinkan pada jam {$mulai} s/d {$akhir}.");
 }
 
-// Cek apakah sudah absen masuk hari ini
-$stmtCek = $conn->prepare('SELECT id, jam_masuk, jam_keluar, foto_keluar FROM absensi WHERE petugas_id = ? AND tanggal = ? LIMIT 1');
+// 6. Cek Status Absensi (Harus sudah Masuk & Belum Keluar)
+$stmtCek = $conn->prepare('SELECT id, jam_masuk, jam_keluar FROM absensi WHERE petugas_id = ? AND tanggal = ? LIMIT 1');
 $stmtCek->bind_param('is', $petugasId, $today);
 $stmtCek->execute();
-$existing = stmtFetchAssoc($stmtCek);
+$existing = $stmtCek->get_result()->fetch_assoc();
 $stmtCek->close();
 
-// BLOCKING: Tidak bisa absen keluar jika belum absen masuk
-if (!$existing || empty($existing['jam_masuk'])) {
-    respondError('Anda belum absen masuk hari ini. Silakan absen masuk terlebih dahulu!');
-}
-
-if (!empty($existing['jam_keluar'])) {
-    respondError('Anda sudah absen keluar hari ini.');
-}
-
-if (!empty($existing['foto_keluar'])) {
-    respondError('Foto absen keluar sudah tersimpan. Tidak bisa absen keluar ulang.');
-}
+if (!$existing || empty($existing['jam_masuk'])) respondError('Anda belum melakukan absen masuk!');
+if (!empty($existing['jam_keluar'])) respondError('Anda sudah melakukan absen keluar hari ini.');
 
 $absensiId = (int)$existing['id'];
 
+// 7. Wajib Laporan Harian (Business Logic)
 $cekLaporan = $conn->prepare('SELECT id FROM laporan_harian WHERE absensi_id = ? LIMIT 1');
 $cekLaporan->bind_param('i', $absensiId);
 $cekLaporan->execute();
-$laporan = stmtFetchAssoc($cekLaporan);
+$laporan = $cekLaporan->get_result()->fetch_assoc();
 $cekLaporan->close();
 
 if (!$laporan) {
-    respondError('Anda wajib mengisi Laporan Kegiatan sebelum Absen Keluar!', '../petugas/laporan-harian.php');
+    respondError('Wajib mengisi Laporan Kegiatan sebelum Absen Keluar!', '../petugas/laporan-harian.php');
 }
 
-// Validasi lokasi sesuai jadwal_lokasi (multi-lokasi support)
-$stmtLokasi = $conn->prepare("SELECT bk.id, bk.nama_titik, bk.latitude, bk.longitude, bk.radius_meter 
-                               FROM jadwal_lokasi jl 
-                               JOIN bagian_koordinat bk ON jl.bagian_koordinat_id = bk.id 
-                               WHERE jl.jadwal_id = ?");
-$stmtLokasi->bind_param('i', $jadwalId);
+// 8. Validasi Radius Lokasi
+$stmtLokasi = $conn->prepare("
+    SELECT bk.id, bk.latitude, bk.longitude, bk.radius_meter 
+    FROM jadwal_lokasi jl 
+    JOIN bagian_koordinat bk ON jl.bagian_koordinat_id = bk.id 
+    WHERE jl.jadwal_id = ?
+");
+$stmtLokasi->bind_param('i', $jadwal['jadwal_id']);
 $stmtLokasi->execute();
-$lokasiJadwal = stmtFetchAllAssoc($stmtLokasi);
+$lokasiJadwal = $stmtLokasi->get_result()->fetch_all(MYSQLI_ASSOC);
 $stmtLokasi->close();
 
-if (empty($lokasiJadwal)) {
-    respondError('Jadwal Anda belum memiliki lokasi yang ditentukan. Hubungi admin.');
-}
-
-// Cek apakah koordinat petugas berada di salah satu lokasi yang diizinkan
 $titikId = null;
-$lokasiValid = false;
 foreach ($lokasiJadwal as $lok) {
-    $distance = haversineDistance($latitude, $longitude, $lok['latitude'], $lok['longitude']);
-    if ($distance <= $lok['radius_meter']) {
+    $dist = haversineDistance($latitude, $longitude, $lok['latitude'], $lok['longitude']);
+    if ($dist <= (float)$lok['radius_meter']) {
         $titikId = (int)$lok['id'];
-        $lokasiValid = true;
         break;
     }
 }
+if (!$titikId) respondError('Posisi Anda di luar radius lokasi tugas.');
 
-if (!$lokasiValid) {
-    $namaLokasi = array_map(fn($l) => $l['nama_titik'], $lokasiJadwal);
-    respondError('Anda berada di luar radius lokasi yang diizinkan: ' . implode(', ', $namaLokasi));
-}
+// 9. Update Database
+$now = date('Y-m-d H:i:s');
+$colLat  = pickFirstExistingColumn($conn, 'absensi', ['latitude_keluar', 'lat_keluar']) ?: 'latitude_keluar';
+$colLong = pickFirstExistingColumn($conn, 'absensi', ['longitude_keluar', 'long_keluar']) ?: 'longitude_keluar';
 
-$nowDateTime = date('Y-m-d H:i:s');
+$sql = "UPDATE absensi SET 
+            jam_keluar = ?, 
+            {$colLat} = ?, 
+            {$colLong} = ?, 
+            titik_keluar_id = ?, 
+            foto_keluar = ?, 
+            status = 'hadir' 
+        WHERE id = ?";
 
-$colLatKeluar = pickFirstExistingColumn($conn, 'absensi', ['latitude_keluar', 'lat_keluar']);
-$colLongKeluar = pickFirstExistingColumn($conn, 'absensi', ['longitude_keluar', 'long_keluar']);
-
-if ($colLatKeluar === null || $colLongKeluar === null) {
-    respondError('Konfigurasi database absensi tidak sesuai (kolom latitude_keluar/longitude_keluar tidak ditemukan).', null, 500);
-}
-
-$sql = "UPDATE absensi SET jam_keluar = ?, {$colLatKeluar} = ?, {$colLongKeluar} = ?, titik_keluar_id = ?, foto_keluar = ?, status = 'hadir' WHERE id = ?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('sddisi', $nowDateTime, $latitude, $longitude, $titikId, $foto, $absensiId);
+$stmt->bind_param('sddisi', $now, $latitude, $longitude, $titikId, $namaFileKeluar, $absensiId);
 
-if (!$stmt->execute()) {
-    $err = $stmt->error;
+if ($stmt->execute()) {
     $stmt->close();
-    respondError('Gagal menyimpan absen keluar: ' . $err, null, 500);
+    if (isJsonRequest()) {
+        echo json_encode(['success' => true, 'message' => 'Absen keluar berhasil!']);
+        exit;
+    }
+    echo "<script>alert('Absen keluar berhasil!'); window.location.href='../petugas/dashboard-v2.php';</script>";
+} else {
+    respondError('Gagal menyimpan data: ' . $conn->error);
 }
-$stmt->close();
-
-if (isJsonRequest()) {
-    jsonResponse(true, 'Absen keluar berhasil!', [
-        'absensi_id' => $absensiId,
-        'shift_id' => $shiftId,
-        'bagian_id' => $bagianId
-    ]);
-}
-
-echo "<script>alert('Absen keluar berhasil!'); window.location.href='../petugas/dashboard-v2.php';</script>";
-exit;
