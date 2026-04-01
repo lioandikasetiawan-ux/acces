@@ -44,14 +44,24 @@ $stmtJadwal->close();
 
 if ($jadwalData) {
     $jadwalId = (int)$jadwalData['id'];
-    // Ambil semua lokasi yang di-assign ke jadwal ini
+    
+
     $stmtLokasi = $conn->prepare("
-        SELECT bk.id, bk.nama_titik, bk.latitude, bk.longitude, bk.radius_meter
+        SELECT 
+            bk.id, 
+            bk.nama_titik, 
+            bk.latitude, 
+            bk.longitude, 
+            bk.radius_meter,
+            b.nama_bagian AS bagian_nama, 
+            b.kode_bagian AS bagian_kode   
         FROM jadwal_lokasi jl
         JOIN bagian_koordinat bk ON jl.bagian_koordinat_id = bk.id
+        LEFT JOIN bagian b ON bk.bagian_id = b.id -- ** Tambahkan JOIN ke tabel bagian
         WHERE jl.jadwal_id = ?
         ORDER BY jl.urutan ASC
     ");
+    
     $stmtLokasi->bind_param("i", $jadwalId);
     $stmtLokasi->execute();
     $allKoordinat = stmtFetchAllAssoc($stmtLokasi);
