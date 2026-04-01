@@ -1,205 +1,114 @@
+
 <?php
+    require_once '../../config/database.php';
+    require_once '../../includes/functions.php';
+    require_once '../../config/session.php';
 
-require_once '../../config/database.php';
-
-require_once '../../includes/functions.php';
-
-
-
-require_once '../../config/session.php';
-
-
-
-if (!isset($_SESSION['role']) || !in_array($_SESSION['role'], ['admin', 'superadmin'], true)) {
-
-    header("Location: ../../auth/login-v2.php");
-
-    exit;
-
-}
+    // Proteksi Role
+    if (!isset($_SESSION['role']) || !in_array($_SESSION['role'], ['admin', 'superadmin'], true)) {
+        header("Location: ../../auth/login-v2.php");
+        exit;
+    }
 
 $isLockedAdmin = ($_SESSION['role'] === 'admin' && !empty($_SESSION['bagian_id']));
-
-
-
-$exportExcel = isset($_GET['excel']) && $_GET['excel'] === '1';
-
-if ($isLockedAdmin) {
-    $exportExcel = false;
-}
-
-
-
-// Get flash message
-
+$exportExcel = (isset($_GET['excel']) && $_GET['excel'] === '1' && !$isLockedAdmin);
 $flash = getFlashMessage();
 
-
-
+// 1. Cek keberadaan kolom secara dinamis (Pencegahan Error bk. = b.id)
 $lokasiWilayahColumnExists = false;
+    $checkLokasiWilayah = $conn->query("SHOW COLUMNS FROM bagian LIKE 'lokasi_wilayah'");
+    if ($checkLokasiWilayah && $checkLokasiWilayah->num_rows > 0) {
+        $lokasiWilayahColumnExists = true;
+    }
 
-$checkLokasiWilayah = $conn->query("SHOW COLUMNS FROM bagian LIKE 'lokasi_wilayah'");
-
-if ($checkLokasiWilayah && $checkLokasiWilayah->num_rows > 0) {
-
-    $lokasiWilayahColumnExists = true;
-
+// Pastikan variabel ini punya nilai default 'bagian_id' agar query tidak pecah
+$koordinatBagianCol = 'bagian_id'; 
+$checkCol = $conn->query("SHOW COLUMNS FROM bagian_koordinat LIKE 'bagian_id'");
+if (!$checkCol || $checkCol->num_rows === 0) {
+    $checkOld = $conn->query("SHOW COLUMNS FROM bagian_koordinat LIKE 'bagian'");
+    if ($checkOld && $checkOld->num_rows > 0) {
+        $koordinatBagianCol = 'bagian';
+    }
 }
 
-
-
-$koordinatBagianCol = 'bagian_id';
-
-$checkKoordinatBagianId = $conn->query("SHOW COLUMNS FROM bagian_koordinat LIKE 'bagian_id'");
-
-if (!$checkKoordinatBagianId || $checkKoordinatBagianId->num_rows === 0) {
-
-    $koordinatBagianCol = 'bagian';
-
-}
-
-
-
-// Get all bagian with koordinat count
-
+// 2. Tentukan field display
 $selectLokasiWilayah = $lokasiWilayahColumnExists ? "COALESCE(b.lokasi_wilayah, b.deskripsi)" : "b.deskripsi";
 
-$query = "
-
-    SELECT b.*, 
-
-           $selectLokasiWilayah AS lokasi_wilayah_display,
-
-           (SELECT COUNT(*) FROM bagian_koordinat bk WHERE bk.$koordinatBagianCol = b.id) as jumlah_titik
-
-    FROM bagian b 
-
- WHERE 1=1
-";
-
-// Filter by bagian_id if set in session
+// 3. Bangun WHERE clausess
+$whereClause = " WHERE 1=1";
 if (isset($_SESSION['bagian_id']) && $_SESSION['bagian_id'] != '') {
-    $query .= " AND b.id = " . (int)$_SESSION['bagian_id'];
+    $whereClause .= " AND b.id = " . (int)$_SESSION['bagian_id'];
 }
 
-$query .= " ORDER BY b.nama_bagian";
-
-// Pagination
-$perPage = 20;
-$page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
-$countSql = preg_replace('/SELECT.*?FROM /s', 'SELECT COUNT(*) as total FROM ', $query, 1);
+// 4. Hitung Total Data untuk Pagination (Query terpisah agar AMAN)
+$countSql = "SELECT COUNT(*) as total FROM bagian b" . $whereClause;
 $countResult = $conn->query($countSql);
 $totalRows = ($countResult && $row_c = $countResult->fetch_assoc()) ? (int)$row_c['total'] : 0;
+
+// 5. Pengaturan Pagination
+$perPage = 20;
 $totalPages = max(1, ceil($totalRows / $perPage));
-if ($page > $totalPages) $page = $totalPages;
+$page = isset($_GET['page']) ? max(1, min($totalPages, (int)$_GET['page'])) : 1;
 $offset = ($page - 1) * $perPage;
+
+// 6. Query Utama (Gunakan variabel $koordinatBagianCol yang sudah divalidasi)
+$query = "
+    SELECT b.*, 
+           $selectLokasiWilayah AS lokasi_wilayah_display,
+           (SELECT COUNT(*) FROM bagian_koordinat bk WHERE bk.$koordinatBagianCol = b.id) as jumlah_titik
+    FROM bagian b 
+    $whereClause
+    ORDER BY b.nama_bagian
+";
 
 if (!$exportExcel) {
     $query .= " LIMIT $perPage OFFSET $offset";
 }
 
 $result = $conn->query($query);
-
-$bagianList = [];
-
-if ($result) {
-
-    while ($row = $result->fetch_assoc()) {
-
-        $bagianList[] = $row;
-
-    }
-
-}
-
-
-
-if ($exportExcel) {
-
-    $filename = 'master_bagian.xls';
-
-    header('Content-Type: application/vnd.ms-excel; charset=utf-8');
-
-    header('Content-Disposition: attachment; filename=' . $filename);
-
-    header('Pragma: no-cache');
-
-    header('Expires: 0');
-
-
-
-    echo "\xEF\xBB\xBF";
-
-    echo '<table border="1">';
-
-    echo '<thead><tr>';
-
-    echo '<th>No</th>';
-
-    echo '<th>Kode</th>';
-
-    echo '<th>Nama Bagian</th>';
-
-    echo '<th>Lokasi/Wilayah</th>';
-
-    echo '<th>Jumlah Titik</th>';
-
-    echo '<th>Status</th>';
-
-    echo '</tr></thead>';
-
-    echo '<tbody>';
-
-
-
-    if (empty($bagianList)) {
-
-        echo '<tr><td colspan="6">Tidak ada data.</td></tr>';
-
-    } else {
-
-        foreach ($bagianList as $i => $bagian) {
-
-            $statusText = !empty($bagian['is_active']) ? 'Aktif' : 'Nonaktif';
-
-            echo '<tr>';
-
-            echo '<td>' . ($i + 1) . '</td>';
-
-            echo '<td>' . htmlspecialchars($bagian['kode_bagian']) . '</td>';
-
-            echo '<td>' . htmlspecialchars($bagian['nama_bagian']) . '</td>';
-
-            echo '<td>' . htmlspecialchars($bagian['lokasi_wilayah_display'] ?? '') . '</td>';
-
-            echo '<td>' . (int)$bagian['jumlah_titik'] . '</td>';
-
-            echo '<td>' . $statusText . '</td>';
-
-            echo '</tr>';
-
+    $bagianList = [];
+    if ($result) {
+        while ($row = $result->fetch_assoc()) {
+            $bagianList[] = $row;
         }
-
     }
 
+// 7. Logika Export Excel
+    if ($exportExcel) {
+        $filename = 'master_bagian_' . date('Ymd') . '.xls';
+        header('Content-Type: application/vnd.ms-excel; charset=utf-8');
+        header('Content-Disposition: attachment; filename=' . $filename);
+        header('Pragma: no-cache');
+        header('Expires: 0');
 
+        echo "\xEF\xBB\xBF"; 
+        echo '<table border="1">
+                <thead>
+                    <tr style="background-color: #eee;">
+                        <th>No</th><th>Kode</th><th>Nama Bagian</th><th>Lokasi/Wilayah</th><th>Jumlah Titik</th><th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>';
 
-    echo '</tbody></table>';
+            foreach ($bagianList as $i => $bagian) {
+                $statusText = !empty($bagian['is_active']) ? 'Aktif' : 'Nonaktif';
+                echo '<tr>
+                        <td>' . ($i + 1) . '</td>
+                        <td>' . htmlspecialchars($bagian['kode_bagian']) . '</td>
+                        <td>' . htmlspecialchars($bagian['nama_bagian']) . '</td>
+                        <td>' . htmlspecialchars($bagian['lokasi_wilayah_display'] ?? '') . '</td>
+                        <td>' . (int)$bagian['jumlah_titik'] . '</td>
+                        <td>' . $statusText . '</td>
+                    </tr>';
+            }
+            echo '</tbody></table>';
+            exit;
+    }
 
-    exit;
+    require_once '../layout/header.php';
+    require_once '../layout/sidebar.php';
 
-}
-
-
-
-require_once '../layout/header.php';
-
-require_once '../layout/sidebar.php';
-
-?>
-
-
-
+    ?>
 <div class="p-8">
 
     <div class="flex justify-between items-center mb-6">
