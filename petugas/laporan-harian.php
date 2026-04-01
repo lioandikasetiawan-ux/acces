@@ -154,6 +154,7 @@ $absensi_id = $absen['id'];
             </div>
         </div>
         <?php endif; ?>
+        
 
         <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 mb-6">
             <label class="block text-gray-700 font-bold mb-2">Foto Dokumentasi</label>

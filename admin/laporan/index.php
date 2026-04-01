@@ -438,8 +438,7 @@ require_once '../layout/sidebar.php';
 
                     <td class="px-6 py-4">
                         <?php if(!empty($row['foto_pemantauan'])): 
-                            // Sesuaikan path ini. 
-                            // Jika folder 'uploads' ada di root, gunakan '../../uploads/laporan/'
+                           
                             $urlFoto = "../../uploads/laporan/" . $row['foto_pemantauan']; 
                         ?>
                             <img src="<?= $urlFoto ?>" 
@@ -450,7 +449,6 @@ require_once '../layout/sidebar.php';
                             </a>
                         <?php endif; ?>
                     </td>
-
                 </tr>
 
                 <?php endwhile; else: ?>
