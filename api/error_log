@@ -1,0 +1,182 @@
+[30-Jan-2026 02:19:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:17
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(96): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 17
+[30-Jan-2026 02:20:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:17
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(96): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 17
+[30-Jan-2026 02:23:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:33
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(191): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 33
+[30-Jan-2026 02:24:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:33
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(191): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 33
+[30-Jan-2026 02:25:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:33
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(191): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 33
+[30-Jan-2026 02:32:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:32
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(188): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 32
+[30-Jan-2026 02:32:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:32
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(188): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 32
+[30-Jan-2026 02:38:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:32
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(147): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 32
+[30-Jan-2026 02:39:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:32
+Stack trace:
+#0 /home/arih9758/public_html/acces/api/pengajuan-process.php(147): hasTable(Object(mysqli), 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 32
+[31-Jan-2026 02:42:11 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 02:42:11 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 02:45:42 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 02:45:42 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 02:57:17 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 02:57:17 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 06:47:17 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 06:47:17 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 06:47:57 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 06:47:57 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 06:51:52 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 06:51:52 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 07:04:02 Asia/Jakarta] PHP Warning:  require_once(../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 07:04:02 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 7
+[31-Jan-2026 07:06:50 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/api/../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 4
+[31-Jan-2026 07:06:50 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/api/../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 4
+[31-Jan-2026 07:06:55 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/api/../helpers/upload.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/laporan-process.php on line 4
+[31-Jan-2026 07:06:55 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/api/../helpers/upload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/laporan-process.php on line 4
+[31-Jan-2026 16:56:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 16:58:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:03:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:466
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 466
+[31-Jan-2026 17:03:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:466
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 466
+[31-Jan-2026 17:05:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:05:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:08:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:08:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:10:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:10:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:13:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:14:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:458
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 458
+[31-Jan-2026 17:18:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:463
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 463
+[31-Jan-2026 17:18:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:463
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 463
+[31-Jan-2026 17:20:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:463
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 463
+[31-Jan-2026 17:20:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:463
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 463
+[31-Jan-2026 17:23:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 553
+[31-Jan-2026 17:23:06 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 553
+[31-Jan-2026 17:26:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:472
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 472
+[31-Jan-2026 17:26:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:472
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 472
+[31-Jan-2026 17:29:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:475
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 475
+[31-Jan-2026 17:30:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/pengajuan-process.php:475
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 475
+[31-Jan-2026 17:34:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 288
+[31-Jan-2026 17:34:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 288
+[31-Jan-2026 17:46:16 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 506
+[31-Jan-2026 17:50:28 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 506
+[31-Jan-2026 20:26:57 Asia/Jakarta] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 554
+[31-Jan-2026 20:29:21 Asia/Jakarta] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 554
+[31-Jan-2026 20:29:44 Asia/Jakarta] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 554
+[01-Feb-2026 18:11:04 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:11:04 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:15:38 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:15:38 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:16:16 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:16:16 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:16:18 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:16:18 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:28:05 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:28:05 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:28:13 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:28:13 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 9
+[01-Feb-2026 18:30:28 Asia/Jakarta] PHP Warning:  require_once(../image-helper.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/api/kejadian-process.php on line 7
+[01-Feb-2026 18:30:28 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '../image-helper.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/api/kejadian-process.php on line 7
+[05-Feb-2026 13:50:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/api/laporan-process.php:182
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/api/laporan-process.php on line 182
+[05-Feb-2026 20:44:33 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[05-Feb-2026 20:54:23 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 09:34:07 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 09:47:26 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 10:35:18 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 14:17:39 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 14:26:28 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 14:31:38 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 14:44:03 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 15:03:04 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[06-Feb-2026 15:49:44 Asia/Jakarta] PHP Warning:  main(): Couldn't fetch mysqli_stmt in /home/arih9758/public_html/acces/api/pengajuan-process.php on line 531
+[20-Feb-2026 00:00:26 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8

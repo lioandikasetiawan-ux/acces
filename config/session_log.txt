@@ -1,0 +1,10 @@
+[2026-02-05 11:22:48] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 11:23:59] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 11:32:43] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 11:32:43] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 11:33:45] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 11:33:49] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 11:36:07] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 12:01:02] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 12:04:59] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4
+[2026-02-05 12:05:06] [/testing/admin/validasi/kejadian.php] Role: admin, Bagian ID: 4

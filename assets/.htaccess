@@ -1,0 +1,5 @@
+# Matikan directory listing
+Options -Indexes
+
+# Paksa index default (kalau ada)
+DirectoryIndex index.php index.html

@@ -1,0 +1,2 @@
+[30-Jan-2026 15:00:13 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[30-Jan-2026 15:12:13 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8

@@ -1,0 +1,622 @@
+[29-Jan-2026 19:45:55 Asia/Jakarta] PHP Warning:  require_once(config/session.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/index.php on line 10
+[29-Jan-2026 19:45:55 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required 'config/session.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/index.php on line 10
+[29-Jan-2026 21:33:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/petugas/kejadian.php on line 100
+[29-Jan-2026 21:47:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 118
+[30-Jan-2026 02:08:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/petugas/kejadian.php on line 100
+[30-Jan-2026 02:08:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 118
+[30-Jan-2026 02:09:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 118
+[30-Jan-2026 02:09:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/petugas/kejadian.php on line 100
+[31-Jan-2026 15:08:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/includes/functions.php:375
+Stack trace:
+#0 /home/arih9758/public_html/acces/petugas/dashboard-v2.php(58): getShiftTersedia(Object(mysqli), 4)
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/includes/functions.php on line 375
+[31-Jan-2026 15:08:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/includes/functions.php:375
+Stack trace:
+#0 /home/arih9758/public_html/acces/petugas/dashboard-v2.php(58): getShiftTersedia(Object(mysqli), 4)
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/includes/functions.php on line 375
+[31-Jan-2026 15:09:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/includes/functions.php:375
+Stack trace:
+#0 /home/arih9758/public_html/acces/petugas/dashboard-v2.php(58): getShiftTersedia(Object(mysqli), 4)
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/includes/functions.php on line 375
+[31-Jan-2026 15:10:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/includes/functions.php:375
+Stack trace:
+#0 /home/arih9758/public_html/acces/petugas/dashboard-v2.php(58): getShiftTersedia(Object(mysqli), 4)
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/includes/functions.php on line 375
+[31-Jan-2026 15:10:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/includes/functions.php:375
+Stack trace:
+#0 /home/arih9758/public_html/acces/petugas/dashboard-v2.php(58): getShiftTersedia(Object(mysqli), 4)
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/includes/functions.php on line 375
+[31-Jan-2026 15:10:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/includes/functions.php:375
+Stack trace:
+#0 /home/arih9758/public_html/acces/petugas/dashboard-v2.php(58): getShiftTersedia(Object(mysqli), 4)
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/includes/functions.php on line 375
+[31-Jan-2026 15:19:23 Asia/Jakarta] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/arih9758/public_html/acces/petugas/index.php on line 111
+[31-Jan-2026 15:19:23 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1101) in /home/arih9758/public_html/acces/petugas/index.php on line 119
+[31-Jan-2026 15:19:52 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1101) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:19:59 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1101) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:20:17 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1101) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:21:02 Asia/Jakarta] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/arih9758/public_html/acces/petugas/index.php on line 111
+[31-Jan-2026 15:21:02 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1101) in /home/arih9758/public_html/acces/petugas/index.php on line 119
+[31-Jan-2026 15:23:15 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1107) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:25:27 Asia/Jakarta] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/arih9758/public_html/acces/petugas/index.php on line 111
+[31-Jan-2026 15:25:27 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1107) in /home/arih9758/public_html/acces/petugas/index.php on line 119
+[31-Jan-2026 15:25:49 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1107) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:27:43 Asia/Jakarta] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/arih9758/public_html/acces/petugas/index.php on line 111
+[31-Jan-2026 15:27:43 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1105) in /home/arih9758/public_html/acces/petugas/index.php on line 119
+[31-Jan-2026 15:28:01 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1105) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:30:29 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1105) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:30:49 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1105) in /home/arih9758/public_html/acces/petugas/index.php on line 28
+[31-Jan-2026 15:32:09 Asia/Jakarta] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/arih9758/public_html/acces/petugas/index.php on line 111
+[31-Jan-2026 15:32:09 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arih9758/public_html/acces/includes/functions.php:1105) in /home/arih9758/public_html/acces/petugas/index.php on line 119
+[31-Jan-2026 20:02:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 13
+[01-Feb-2026 12:12:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:12:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:12:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:12:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:13:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:13:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:13:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:13:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:13:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:13:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:14:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:14:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:15:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:15:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:15:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:16:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:16:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/includes/functions.php on line 697
+[01-Feb-2026 12:16:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/includes/functions.php on line 697
+[01-Feb-2026 12:18:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:18:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:18:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:22:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:22:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:22:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 12:24:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianById() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 57
+[01-Feb-2026 14:36:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getAllBagian() in /home/arih9758/public_html/acces/petugas/lokasi.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/lokasi.php on line 18
+[01-Feb-2026 15:58:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getAllBagian() in /home/arih9758/public_html/acces/petugas/lokasi.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/lokasi.php on line 18
+[01-Feb-2026 16:00:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getAllBagian() in /home/arih9758/public_html/acces/petugas/lokasi.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/lokasi.php on line 18
+[01-Feb-2026 16:09:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function getBagianDropdown() in /home/arih9758/public_html/acces/petugas/lokasi.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/lokasi.php on line 35
+[01-Feb-2026 16:11:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/includes/functions.php on line 667
+[01-Feb-2026 16:13:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/arih9758/public_html/acces/includes/functions.php on line 686
+[01-Feb-2026 16:13:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/arih9758/public_html/acces/includes/functions.php on line 686
+[01-Feb-2026 16:15:31 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/arih9758/public_html/acces/petugas/lokasi.php on line 44
+[01-Feb-2026 16:15:31 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/arih9758/public_html/acces/petugas/lokasi.php on line 144
+[05-Feb-2026 13:47:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 13:47:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 14:08:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 14:12:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 14:12:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 14:29:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 14:29:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 14:52:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 15:00:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:39:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:39:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:39:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:39:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:52:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:52:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:53:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:54:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:54:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:55:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 15:55:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 15:59:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:01:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:06:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:06:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:06:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:06:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:07:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:07:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:08:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:08:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:09:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:09:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:09:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:11:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:12:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:13:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:14:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:14:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:15:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:16:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:16:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:16:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:16:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:17:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:19:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:25:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 16:28:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:41:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:41:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:42:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 16:44:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:02:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:02:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:03:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:03:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:03:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:03:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:04:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:05:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:05:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:06:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 17:07:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:08:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/pengajuan.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/pengajuan.php on line 73
+[05-Feb-2026 17:14:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/petugas/rekap.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/rekap.php on line 34
+[05-Feb-2026 19:35:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/arih9758/public_html/acces/petugas/laporan-harian.php on line 15
+[05-Feb-2026 19:40:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home/arih9758/public_html/acces/petugas/laporan-harian.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/laporan-harian.php on line 16
+[06-Feb-2026 16:23:26 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:26 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:30 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:30 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:31 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:31 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:32 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:32 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:33 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:33 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:34 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:34 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:34 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:34 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:35 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:35 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:36 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:36 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:38 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:38 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:39 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:39 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:39 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:39 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:40 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:40 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:41 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:41 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:41 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:41 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:41 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:41 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:42 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:42 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:45 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:45 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:47 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:47 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:48 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:48 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:49 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:49 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:51 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/petugas/../../config/database.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:23:51 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/petugas/../../config/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 2
+[06-Feb-2026 16:58:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:58:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:58:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:58:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:58:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:58:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:59:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:59:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:59:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 16:59:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:01:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:03:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:12:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:13:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:13:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:13:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function syncAbsensiStatusOtomatisPetugasTanggal() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 158
+[06-Feb-2026 17:15:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function dbHasColumn() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 134
+[06-Feb-2026 17:15:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function dbHasColumn() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 134
+[06-Feb-2026 17:15:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function dbHasColumn() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 134
+[06-Feb-2026 17:15:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function dbHasColumn() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 134
+[06-Feb-2026 17:15:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function dbHasColumn() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 134
+[06-Feb-2026 17:17:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function dbHasColumn() in /home/arih9758/public_html/acces/petugas/dashboard-v2.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/petugas/dashboard-v2.php on line 134
+[09-Feb-2026 14:14:47 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[10-Feb-2026 11:59:39 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[10-Feb-2026 11:59:40 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[10-Feb-2026 12:25:13 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[12-Feb-2026 00:00:20 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[12-Feb-2026 00:00:21 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[12-Feb-2026 00:00:23 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[12-Feb-2026 00:00:24 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[13-Feb-2026 17:19:34 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8

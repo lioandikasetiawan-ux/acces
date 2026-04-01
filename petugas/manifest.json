@@ -1,0 +1,40 @@
+{
+  "name": "Absensi Cimanuk-Cisanggarung Elektronik Sistem",
+  "short_name": "ACCES",
+"id": "/acces/petugas/",
+
+  "description": "Aplikasi Absensi Pegawai Lapangan Cimanuk-Cisanggarung Elektronik Sistem (ACCES). Memudahkan petugas untuk melakukan presensi, laporan harian, dan pengajuan izin secara online.",
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": "./index.php",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "categories": [
+    "productivity",
+    "business",
+    "utilities"
+  ],
+  "iarc_rating_id": "",
+  "icons": [
+    {
+      "src": "../assets/img/Acces-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../assets/img/Acces-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

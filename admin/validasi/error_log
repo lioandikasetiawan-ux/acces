@@ -1,0 +1,315 @@
+[29-Jan-2026 20:42:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 20:42:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 20:42:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 20:42:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:06:03 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:06:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:09:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:09:33 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:09:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:09:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:09:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:11:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:11:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:14:42 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:19:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:19:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:40:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:51:16 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:55:06 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 153
+[29-Jan-2026 21:56:45 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 305
+[29-Jan-2026 21:56:52 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 305
+[29-Jan-2026 21:57:46 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 21:58:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 85
+[29-Jan-2026 22:00:59 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 359
+[29-Jan-2026 22:01:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 359
+[29-Jan-2026 22:01:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/arih9758/public_html/acces/admin/validasi/pengajuan.php on line 359
+[30-Jan-2026 09:30:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 09:30:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 09:30:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 09:46:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 09:49:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 14:57:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 14:58:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 14:58:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[30-Jan-2026 14:58:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[31-Jan-2026 09:57:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[31-Jan-2026 09:58:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[31-Jan-2026 10:05:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:7
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(87): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 7
+[31-Jan-2026 10:05:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:12
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(172): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 12
+[31-Jan-2026 10:05:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:12
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(172): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 12
+[31-Jan-2026 10:11:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:12
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(172): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 12
+[31-Jan-2026 10:13:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:12
+Stack trace:
+#0 /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php(172): hasColumn(Object(mysqli), 'absensi', 'shift')
+#1 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 12
+[31-Jan-2026 10:24:46 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 125
+[31-Jan-2026 10:24:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 125
+[31-Jan-2026 10:25:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 125
+[31-Jan-2026 10:30:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 125
+[31-Jan-2026 10:35:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 95
+[31-Jan-2026 10:35:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 95
+[01-Feb-2026 17:35:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:21 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:25 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:33 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:33 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:45 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:45 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:35:57 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:36:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:36:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:36:02 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:36:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:36:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[01-Feb-2026 17:37:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /home/arih9758/public_html/acces/admin/validasi/kejadian.php on line 295
+[05-Feb-2026 12:32:28 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:32 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:36 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:40 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:44 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:48 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:52 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:32:56 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:00 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:04 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:08 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:12 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:16 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:20 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:24 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:28 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:32 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:36 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:40 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:44 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:48 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:52 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:33:56 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:00 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:04 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:08 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:12 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:16 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:20 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:24 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:28 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:32 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:36 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:40 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:44 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:48 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:52 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:56 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:00 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:04 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:08 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:12 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:16 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:20 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:24 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:28 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:32 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:36 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:40 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:44 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:48 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:35:52 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:36:52 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 15:57:34 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:34 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:36 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:36 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:37 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:37 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:39 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:39 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:48 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:48 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:50 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:57:50 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:58:20 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:58:20 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:58:22 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 15:58:22 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:45:30 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:45:30 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:48:56 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:48:56 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:48:58 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:48:58 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:49:07 Asia/Jakarta] PHP Warning:  require_once(/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php): failed to open stream: No such file or directory in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 20:49:07 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/arih9758/public_html/acces/admin/validasi/../../config/functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 4
+[05-Feb-2026 22:08:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 09:50:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:50:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:53:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 09:53:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 15:22:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 15:23:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 15:48:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 15:48:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 15:48:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 15:48:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 15:48:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 15:48:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 15:48:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 101
+[06-Feb-2026 16:12:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 16:23:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107
+[06-Feb-2026 16:23:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/arih9758/public_html/acces/admin/validasi/proses-pengajuan.php on line 107

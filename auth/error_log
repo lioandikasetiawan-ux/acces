@@ -1,0 +1,15 @@
+[29-Jan-2026 16:59:09 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[01-Feb-2026 12:17:06 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/includes/functions.php on line 697
+[01-Feb-2026 12:17:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/includes/functions.php on line 697
+[05-Feb-2026 12:34:05 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:37 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 12:34:55 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arih9758/public_html/acces/config/database.php on line 8
+[05-Feb-2026 13:34:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/auth/login-v2.php on line 25
+[05-Feb-2026 13:34:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/auth/login-v2.php on line 25
+[05-Feb-2026 13:35:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/auth/login-v2.php on line 25
+[05-Feb-2026 13:35:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/arih9758/public_html/acces/auth/login-v2.php on line 25
+[10-Feb-2026 12:25:12 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[11-Feb-2026 11:01:09 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[12-Feb-2026 00:00:21 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[20-Feb-2026 00:00:25 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
+[20-Feb-2026 14:48:16 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/arih9758/public_html/acces/config/database.php on line 8
