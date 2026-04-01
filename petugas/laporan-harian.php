@@ -28,7 +28,16 @@ if ($bagian_id_session > 0) {
 }
 
 $tanggal = date('Y-m-d');
-$q = $conn->query("SELECT id, jam_masuk, jam_keluar FROM absensi WHERE petugas_id = '$petugas_id' AND tanggal = '$tanggal' AND jam_masuk IS NOT NULL AND jam_masuk <> '' AND (jam_keluar IS NULL OR jam_keluar = '') ORDER BY id DESC LIMIT 1");
+// $q = $conn->query("SELECT id, jam_masuk, jam_keluar FROM absensi WHERE petugas_id = '$petugas_id' AND tanggal = '$tanggal' AND jam_masuk IS NOT NULL AND jam_masuk <> '' AND (jam_keluar IS NULL OR jam_keluar = '') ORDER BY id DESC LIMIT 1");
+
+// Gunakan IS NOT NULL untuk mengecek apakah jam sudah terisi
+$q = $conn->query("SELECT id, jam_masuk, jam_keluar 
+                   FROM absensi 
+                   WHERE petugas_id = '$petugas_id' 
+                   AND tanggal = '$tanggal' 
+                   AND jam_masuk IS NOT NULL 
+                   AND jam_keluar IS NULL 
+                   ORDER BY id DESC LIMIT 1");
 
 $absen = $q ? $q->fetch_assoc() : null;
 

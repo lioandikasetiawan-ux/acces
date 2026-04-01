@@ -144,6 +144,38 @@ if ($dupe) {
 }
 
 // --- Foto ---
+// $fotoField = null;
+// if (isset($_FILES['foto_laporan']) && $_FILES['foto_laporan']['error'] == 0) {
+//     $fotoField = 'foto_laporan';
+// } elseif (isset($_FILES['foto_laporan_camera']) && $_FILES['foto_laporan_camera']['error'] == 0) {
+//     $fotoField = 'foto_laporan_camera';
+// }
+
+// if ($fotoField === null) {
+//     $_SESSION['error_message'] = 'Wajib melampirkan foto dokumentasi!';
+//     header('Location: ../petugas/laporan-harian.php');
+//     exit;
+// }
+
+// $file_tmp  = $_FILES[$fotoField]['tmp_name'];
+// $file_type = $_FILES[$fotoField]['type'];
+
+// $allowed_types = array('image/jpeg', 'image/jpg', 'image/png');
+// if (!in_array($file_type, $allowed_types)) {
+//     $_SESSION['error_message'] = 'Format foto harus JPG atau PNG!';
+//     header('Location: ../petugas/laporan-harian.php');
+//     exit;
+// }
+
+// $foto_nama = compressPhotoForMobile($file_tmp);
+// if ($foto_nama === false) {
+//     $_SESSION['error_message'] = 'Gagal memproses foto!';
+//     header('Location: ../petugas/laporan-harian.php');
+//     exit;
+// }
+
+
+// --- Foto ke File Fisik (Simpan Nama File ke DB) ---
 $fotoField = null;
 if (isset($_FILES['foto_laporan']) && $_FILES['foto_laporan']['error'] == 0) {
     $fotoField = 'foto_laporan';
@@ -151,27 +183,63 @@ if (isset($_FILES['foto_laporan']) && $_FILES['foto_laporan']['error'] == 0) {
     $fotoField = 'foto_laporan_camera';
 }
 
-if ($fotoField === null) {
+// Cek jika input berupa Base64 (biasanya dari kamera webcam/canvas)
+$foto_base64 = $_POST['foto_laporan_base64'] ?? null; 
+
+if ($fotoField === null && empty($foto_base64)) {
     $_SESSION['error_message'] = 'Wajib melampirkan foto dokumentasi!';
     header('Location: ../petugas/laporan-harian.php');
     exit;
 }
 
-$file_tmp  = $_FILES[$fotoField]['tmp_name'];
-$file_type = $_FILES[$fotoField]['type'];
-$allowed_types = array('image/jpeg', 'image/jpg', 'image/png');
-if (!in_array($file_type, $allowed_types)) {
-    $_SESSION['error_message'] = 'Format foto harus JPG atau PNG!';
-    header('Location: ../petugas/laporan-harian.php');
-    exit;
+$uploadDir = '../uploads/laporan/';
+if (!file_exists($uploadDir)) mkdir($uploadDir, 0777, true);
+
+$foto_nama = ""; // Variabel utama yang akan masuk ke Database
+
+if ($fotoField) {
+    // JIKA INPUT BERUPA FILE UPLOAD ($_FILES)
+    $file_tmp  = $_FILES[$fotoField]['tmp_name'];
+    $file_type = $_FILES[$fotoField]['type'];
+    $allowed_types = array('image/jpeg', 'image/jpg', 'image/png');
+
+    if (!in_array($file_type, $allowed_types)) {
+        $_SESSION['error_message'] = 'Format foto harus JPG atau PNG!';
+        header('Location: ../petugas/laporan-harian.php');
+        exit;
+    }
+
+    // Buat nama file unik
+    $foto_nama = 'lapor_' . $petugas_id . '_' . time() . '.jpg';
+    
+    // Pindahkan file (Bisa pakai move_uploaded_file atau compressPhotoForMobile jika fungsinya simpan file)
+    if (!move_uploaded_file($file_tmp, $uploadDir . $foto_nama)) {
+        $_SESSION['error_message'] = 'Gagal menyimpan file foto!';
+        header('Location: ../petugas/laporan-harian.php');
+        exit;
+    }
+} elseif (!empty($foto_base64)) {
+    // JIKA INPUT BERUPA BASE64
+    if (preg_match('/^data:image\/(\w+);base64,/', $foto_base64, $type)) {
+        $dataFoto = substr($foto_base64, strpos($foto_base64, ',') + 1);
+        $dataFoto = base64_decode($dataFoto);
+        
+        if ($dataFoto === false) {
+            $_SESSION['error_message'] = 'Format foto Base64 rusak!';
+            header('Location: ../petugas/laporan-harian.php');
+            exit;
+        }
+
+        $foto_nama = 'lapor_' . $petugas_id . '_' . time() . '.jpg';
+        if (!file_put_contents($uploadDir . $foto_nama, $dataFoto)) {
+            $_SESSION['error_message'] = 'Gagal menyimpan file foto base64!';
+            header('Location: ../petugas/laporan-harian.php');
+            exit;
+        }
+    }
 }
 
-$foto_nama = compressPhotoForMobile($file_tmp);
-if ($foto_nama === false) {
-    $_SESSION['error_message'] = 'Gagal memproses foto!';
-    header('Location: ../petugas/laporan-harian.php');
-    exit;
-}
+
 
 // --- Cek kolom opsional di laporan_harian ---
 function _hasCol($conn, $col) {

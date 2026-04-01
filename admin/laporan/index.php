@@ -259,10 +259,10 @@ if (isset($_GET['partial']) && $_GET['partial'] === '1') {
             echo "<td class=\"px-6 py-4\">";
 
             if (!empty($row['foto_pemantauan'])) {
-
-                echo "<img src=\"" . $row['foto_pemantauan'] . "\" class=\"w-16 h-16 rounded object-cover border cursor-pointer hover:scale-110 transition js-foto-laporan\" alt=\"Foto Pemantauan\">";
-                echo "<a href=\"" . htmlspecialchars($row['foto_pemantauan']) . "\" download=\"laporan_" . $row['id'] . ".jpg\" class=\"text-blue-600 hover:underline text-xs block mt-1\"><i class=\"fas fa-download\"></i> Download</a>";
-
+                // UBAH MENJADI:
+                $pathFoto = "../../uploads/laporan/" . $row['foto_pemantauan']; // Sesuaikan jumlah ../ dengan struktur folder Anda
+                echo "<img src=\"" . $pathFoto . "\" class=\"w-16 h-16 rounded object-cover border cursor-pointer hover:scale-110 transition js-foto-laporan\" alt=\"Foto Pemantauan\">";
+                echo "<a href=\"" . $pathFoto . "\" download=\"laporan_" . $row['id'] . ".jpg\" class=\"text-blue-600 hover:underline text-xs block mt-1\"><i class=\"fas fa-download\"></i> Download</a>";
             }
 
             echo "</td>";
@@ -437,16 +437,18 @@ require_once '../layout/sidebar.php';
                     </td>
 
                     <td class="px-6 py-4">
-
-                        <?php if(!empty($row['foto_pemantauan'])): ?>
-
-                            <img src="<?= $row['foto_pemantauan'] ?>" class="w-16 h-16 rounded object-cover border cursor-pointer hover:scale-110 transition js-foto-laporan" alt="Foto Pemantauan">
-                            <a href="<?= htmlspecialchars($row['foto_pemantauan']) ?>" download="laporan_<?= $row['id'] ?>.jpg" class="text-blue-600 hover:underline text-xs block mt-1">
+                        <?php if(!empty($row['foto_pemantauan'])): 
+                            // Sesuaikan path ini. 
+                            // Jika folder 'uploads' ada di root, gunakan '../../uploads/laporan/'
+                            $urlFoto = "../../uploads/laporan/" . $row['foto_pemantauan']; 
+                        ?>
+                            <img src="<?= $urlFoto ?>" 
+                                class="w-16 h-16 rounded object-cover border cursor-pointer hover:scale-110 transition js-foto-laporan" 
+                                alt="Foto Pemantauan"
+                                onerror="this.src='../../assets/img/no-image.png';"> <a href="<?= $urlFoto ?>" download="laporan_<?= $row['id'] ?>.jpg" class="text-blue-600 hover:underline text-xs block mt-1">
                                 <i class="fas fa-download"></i> Download
                             </a>
-
                         <?php endif; ?>
-
                     </td>
 
                 </tr>
