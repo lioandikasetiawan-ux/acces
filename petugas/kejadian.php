@@ -118,36 +118,18 @@ $res_riwayat = $conn->query($q_riwayat);
                     <label class="block text-gray-600 text-xs font-bold mb-2 uppercase">Bukti Foto</label>
 
                     <div class="flex gap-2 mb-3">
-
                         <button type="button" onclick="openGallery()" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2 rounded-lg text-sm">Pilih dari Galeri</button>
-
                     </div>
-
-                    
-
                     <div class="relative w-full h-40 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-gray-50 transition overflow-hidden" onclick="openGallery()">
-
                         <img id="preview" class="absolute inset-0 w-full h-full object-cover hidden">
-
                         <div id="placeholder" class="text-center p-4">
-
                             <i class="fas fa-camera text-3xl text-gray-400 mb-2"></i>
-
                             <p class="text-xs text-gray-500">Klik untuk ambil/pilih foto</p>
-
                         </div>
-
                     </div>
-
                     <input type="file" name="foto_kejadian" id="fotoInput" accept="image/*" required class="hidden">
-
                     <input type="file" name="foto_kejadian_camera" id="fotoCameraInput" accept="image/*" capture="environment" class="hidden">
-
-
                 </div>
-		
-		
-
 
 
                 <?php if (in_array($kode_sync, [1, 5, 6])): ?>
@@ -221,15 +203,15 @@ $res_riwayat = $conn->query($q_riwayat);
 
                     <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex gap-4 items-start">
 
-                        <div class="flex-shrink-0">
-
-                            <?php if(!empty($row['foto'])): ?>
-
-                                <img src="<?= $row['foto'] ?>" class="w-16 h-16 rounded-lg object-cover border bg-gray-100 shadow-sm">
-
-                            <?php endif; ?>
-
-                        </div>
+                    <div class="flex-shrink-0">
+                        <?php if(!empty($row['foto'])): ?>
+                            <img src="<?= $row['foto'] ?>" class="w-16 h-16 rounded-lg object-cover border bg-gray-100 shadow-sm" onerror="this.src='../assets/img/no-image.png';">
+                        <?php else: ?>
+                            <div class="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center border">
+                                <i class="fas fa-image text-gray-400"></i>
+                            </div>
+                        <?php endif; ?>
+                    </div>
 
                         
 
