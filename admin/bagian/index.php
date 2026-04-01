@@ -108,7 +108,8 @@ $result = $conn->query($query);
     require_once '../layout/header.php';
     require_once '../layout/sidebar.php';
 
-    ?>
+?>
+
 <div class="p-8">
 
     <div class="flex justify-between items-center mb-6">
