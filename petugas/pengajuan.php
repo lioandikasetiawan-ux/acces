@@ -108,9 +108,9 @@ $shift_default = $_SESSION['shift_nama'] ?? ($shiftList[0] ?? '');
 
 
 
-$cekComplete = $conn->prepare("SELECT id FROM absensi WHERE petugas_id = ? AND tanggal = ? AND jam_masuk IS NOT NULL AND jam_masuk <> '' AND jam_keluar IS NOT NULL AND jam_keluar <> '' LIMIT 1");
+// $cekComplete = $conn->prepare("SELECT id FROM absensi WHERE petugas_id = ? AND tanggal = ? AND jam_masuk IS NOT NULL AND jam_masuk <> '' AND jam_keluar IS NOT NULL AND jam_keluar <> '' LIMIT 1");
 
-
+$cekComplete = $conn->prepare("SELECT id FROM absensi WHERE petugas_id = ? AND tanggal = ? AND jam_masuk IS NOT NULL AND jam_keluar IS NOT NULL LIMIT 1");
 
 $cekComplete->bind_param('is', $petugas_id, $tanggal_hari_ini);
 
@@ -138,7 +138,8 @@ $cekComplete->close();
 
 
 
-$qOpen = $conn->prepare("SELECT id, tanggal, jam_masuk, jam_keluar FROM absensi WHERE petugas_id = ? AND tanggal = ? AND jam_masuk IS NOT NULL AND jam_masuk <> '' AND (jam_keluar IS NULL OR jam_keluar = '') ORDER BY id DESC LIMIT 1");
+// $qOpen = $conn->prepare("SELECT id, tanggal, jam_masuk, jam_keluar FROM absensi WHERE petugas_id = ? AND tanggal = ? AND jam_masuk IS NOT NULL AND jam_masuk <> '' AND (jam_keluar IS NULL OR jam_keluar = '') ORDER BY id DESC LIMIT 1");
+$qOpen = $conn->prepare("SELECT id, tanggal, jam_masuk, jam_keluar FROM absensi WHERE petugas_id = ? AND tanggal = ? AND jam_masuk IS NOT NULL AND jam_keluar IS NULL ORDER BY id DESC LIMIT 1");
 if ($qOpen) {
     $qOpen->bind_param('is', $petugas_id, $tanggal_hari_ini);
     $qOpen->execute();
@@ -584,10 +585,20 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
 
 
 
-            $query = "SELECT p.*, {$shiftDisplayExpr} AS shift_display FROM pengajuan p {$joinShift} WHERE p.petugas_id = '$id' ORDER BY p.created_at DESC LIMIT 5";
+            // $query = "SELECT p.*, {$shiftDisplayExpr} AS shift_display FROM pengajuan p {$joinShift} WHERE p.petugas_id = '$id' ORDER BY p.created_at DESC LIMIT 5";
 
-            $hist = $conn->query($query);
+            // $hist = $conn->query($query);
+        
+            // Gunakan prepared statement agar tidak error jika ID kosong
+            $query = "SELECT p.*, {$shiftDisplayExpr} AS shift_display 
+                    FROM pengajuan p {$joinShift} 
+                    WHERE p.petugas_id = ? 
+                    ORDER BY p.created_at DESC LIMIT 5";
 
+            $stmtHist = $conn->prepare($query);
+            $stmtHist->bind_param("i", $petugas_id); // Menggunakan $petugas_id yang sudah ada di atas
+            $stmtHist->execute();
+            $hist = $stmtHist->get_result();
 
 
             
@@ -658,8 +669,10 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
 
 
 
-                        <p class="text-xs text-gray-500"><?= date('d M Y', strtotime($row['tanggal'])); ?></p>
-
+                        <!-- <p class="text-xs text-gray-500"><?= date('d M Y', strtotime($row['tanggal'])); ?></p> -->
+                        <p class="text-xs text-gray-500">
+                            <?= (!empty($row['tanggal']) && $row['tanggal'] !== '0000-00-00') ? date('d M Y', strtotime($row['tanggal'])) : '-'; ?>
+                        </p>
 
 
                         <p class="text-xs text-gray-500">Shift: <?= $row['shift_display'] ?></p>
