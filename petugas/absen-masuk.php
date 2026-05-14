@@ -125,13 +125,9 @@ if (!empty($absenAktif)) {
         }
 
         if (navigator.geolocation) {
-            document.getElementById("location-status").innerHTML = "Sedang mengunci sinyal GPS (Akurasi Tinggi)...";
-
-            navigator.geolocation.getCurrentPosition(showPosition, showError, {
-                enableHighAccuracy: true, 
-                timeout: 20000,        
-                maximumAge: 0            
-            });
+            navigator.geolocation.getCurrentPosition(showPosition, showError, {enableHighAccuracy: true});
+        } else {
+            document.getElementById("location-status").innerHTML = "Geolocation tidak didukung browser ini.";
         }
 
         function showPosition(position) {

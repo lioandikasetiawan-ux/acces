@@ -124,23 +124,12 @@ if (!$laporan) {
             });
         }
 
-       if (navigator.geolocation) {
-            document.getElementById("location-status").innerHTML = "Sedang mengunci sinyal GPS...";
-
+        if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 document.getElementById('latitude').value = position.coords.latitude;
                 document.getElementById('longitude').value = position.coords.longitude;
-                document.getElementById("location-status").innerHTML = "Lokasi terkunci (Akurasi: " + Math.round(position.coords.accuracy) + "m)";
-                document.getElementById("location-status").classList.replace('text-gray-500', 'text-green-600');
+                document.getElementById("location-status").innerHTML = "Lokasi terkunci.";
                 checkReady();
-            }, function(error) {
-                alert("Gagal mendapatkan lokasi. Pastikan GPS aktif dan berikan izin akses.");
-                document.getElementById("location-status").innerHTML = "Gagal mendapatkan lokasi.";
-                document.getElementById("location-status").classList.replace('text-gray-500', 'text-red-600');
-            }, {
-                enableHighAccuracy: true, 
-                timeout: 20000,      
-                maximumAge: 0
             });
         }
 

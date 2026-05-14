@@ -67,20 +67,13 @@ $input = json_decode(file_get_contents('php://input'), true) ?? $_POST;
 $tipe = $input['tipe'] ?? ''; 
 $bagianId = (int)($input['bagian_id'] ?? $petugasData['bagian_id']);
 $shiftId = (int)($input['shift_id'] ?? $petugasData['shift_id']);
-$latRaw = $input['latitude'] ?? null;
-$longRaw = $input['longitude'] ?? null;
+$latitude = (float)($input['latitude'] ?? 0);
+$longitude = (float)($input['longitude'] ?? 0);
 $laporan = sanitize($input['laporan'] ?? '');
 
 if (empty($tipe) || !in_array($tipe, ['masuk', 'keluar'])) {
     jsonResponse(false, 'Tipe absensi tidak valid', [], 400);
 }
-
-if (empty($latRaw) || empty($longRaw)) {
-    jsonResponse(false, 'Gagal: Koordinat tidak terdeteksi. Pastikan GPS aktif dan izin lokasi diberikan pada browser.', [], 400);
-}
-
-$latitude = (float)$latRaw;
-$longitude = (float)$longRaw;
 
 $today = date('Y-m-d');
 $nowDateTime = date('Y-m-d H:i:s');
