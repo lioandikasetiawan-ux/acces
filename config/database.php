@@ -3,7 +3,7 @@
 $host = "127.0.0.1";
 $user = "root";
 $pass = "";
-$db   = "db_acces";
+$db   = "ontime";
 
 $conn = new mysqli($host, $user, $pass, $db);
 

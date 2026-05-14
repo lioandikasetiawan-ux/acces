@@ -18,16 +18,21 @@ if (!isset($_SESSION['petugas_id'])) {
 
 // Ambil parameter
 $bagianId = (int)($_GET['bagian_id'] ?? $_POST['bagian_id'] ?? 0);
-$latitude = (float)($_GET['latitude'] ?? $_POST['latitude'] ?? 0);
-$longitude = (float)($_GET['longitude'] ?? $_POST['longitude'] ?? 0);
+$latRaw = $_GET['latitude'] ?? $_POST['latitude'] ?? null;
+$longRaw = $_GET['longitude'] ?? $_POST['longitude'] ?? null;
 
 if ($bagianId <= 0) {
     jsonResponse(false, 'Parameter bagian_id diperlukan', [], 400);
 }
 
-if ($latitude == 0 || $longitude == 0) {
-    jsonResponse(false, 'Parameter latitude dan longitude diperlukan', [], 400);
+if (empty($latRaw) || empty($longRaw) || (float)$latRaw == 0) {
+    jsonResponse(false, 'Gagal: HP belum berhasil mengunci sinyal GPS. Pastikan GPS aktif dan tunggu sebentar.', [], 400);
 }
+
+$latitude = (float)$latRaw;
+$longitude = (float)$longRaw;
+
+
 
 try {
     $result = validasiLokasi($conn, $latitude, $longitude, $bagianId);
